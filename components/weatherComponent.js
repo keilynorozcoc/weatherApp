@@ -1,12 +1,12 @@
 class WeatherComponent{
 	constructor(model, parent) {
-		console.log(model.time, 
-					model.main.temp, 
-					model.main.pressure, 
-					model.main.humidity, 
+		// console.log(model.time, 
+		// 			model.main.temp, 
+		// 			model.main.pressure, 
+		// 			model.main.humidity, 
 					// model.weather.main, 
 					// model.weather.description
-				);
+				// );
 				
 		this.model = model;
 		this.parent = document.getElementById('weathersContainer');
