@@ -2,6 +2,7 @@ window.addEventListener('load', init, false);
 function init() {
 	// console.log('App running!');
 	//1. Declare variables
+	 var dataManager = new DataManager();
 
 	// var citiesContainer = document.getElementById('citiesContainer');
 	// var weatherContainer = document.getElementById('weatherContainer');
@@ -26,11 +27,12 @@ function init() {
 				var data = JSON.parse(request.responseText);
 
 			data.forEach(e => {
-				var weatherData = e;
-				var cityData = e;				
+				var cityData = e;	
+							
+				dataManager.cities.push(cityData);
+				dataManager.setCurrentCity(cityData);
 
-				var cityComponent = new CityComponent(cityData);
-				var weatherComponent = new WeatherComponent(weatherData);
+				var cityComponent = new CityComponent(cityData, dataManager);
 			});
 
 			}

@@ -1,5 +1,5 @@
 /* .Add your amazing style here! */
-.mainContainer{
+.component{
     color: grey;
 }
 #citiesContainer{
@@ -12,6 +12,9 @@
 	border-radius: 2%;
 	border: solid 2px rgb(205, 151, 221); 
 	margin-bottom: 5%;
+}
+.cityContainer:hover{
+	cursor: pointer;
 }
 #weathersContainer{
     width: 40%;

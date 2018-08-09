@@ -1,15 +1,12 @@
-class WeatherComponent{
-	constructor(model, parent) {
-		// console.log(model.time, 
-		// 			model.main.temp, 
-		// 			model.main.pressure, 
-		// 			model.main.humidity, 
-					// model.weather.main, 
-					// model.weather.description
-				// );
-				
-		this.model = model;
+class WeatherComponent extends Component{
+	constructor(model, dataManager){
+		super(model, dataManager);
+		
 		this.parent = document.getElementById('weathersContainer');
+		while(this.parent.firstChild){
+			this.parent.removeChild(this.parent.firstChild);
+		}
+		console.log(model);
         
         //Create Elements
         this.weatherContainer = document.createElement('div');
