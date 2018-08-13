@@ -9,7 +9,7 @@ class WeatherComponent extends Component{
 		console.log(model);
         
         //Create Elements
-        this.weatherContainer = document.createElement('div');
+		this.weatherContainer = document.createElement('div');	
 		this.time = document.createElement('h3');
         this.temp = document.createElement('p');
 		this.pressure = document.createElement('p');

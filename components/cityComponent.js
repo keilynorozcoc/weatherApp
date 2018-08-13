@@ -19,7 +19,7 @@ class CityComponent extends Component {
 		this.parent.appendChild(this.cityContainer);
 
 		//Fill Element
-		this.name.innerText = 'Name:  ' + model.city.name;
+		this.name.innerText = model.city.name;
 		this.country.innerText = 'Country:  ' +  model.city.country;
 
 		this.cityContainer.onclick = this.cityContainerBtnClick.bind(this);
